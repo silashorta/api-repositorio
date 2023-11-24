@@ -14,6 +14,10 @@ app.get('/', (req, res) => {
   res.send('Bem-vindo à minha aplicação Node.js com Express e Nodemailer!');
 });
 
+app.get('/sobre', (req, res) => {
+  res.send('Bem-vindo a página sobre');
+});
+
 app.post('/send-email', async (req, res) => {
   const { name, email, message } = req.body;
 
